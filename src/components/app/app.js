@@ -2,21 +2,28 @@ import React from 'react';
 
 import AppHeader from '../app-header';
 import SearchPanel from '../search-panel';
-import PostStatusFilter from '../search-panel/';
+import PostStatusFilter from '../post-status-filter';
 import PostList from '../post-list';
 import PostAddForm from '../post-add-form';
 
 import './app.css'
 
 const App = () =>{
+
+    const data = [
+        {label: 'Going to learn React', important: true, id: 'xs'},
+        {label: 'That is so good', important: false, id: 's'},
+        {label: 'I need a break...', important: false, id: 'm'}
+    ];
+
     return (
         <div className="app">
             <AppHeader/>
             <div className="search-panel d-flex">
                 <SearchPanel/>
-                <PostStatusFilter/>
+                <PostStatusFilter/>                
             </div>
-            <PostList/>
+            <PostList posts={data}/>
             <PostAddForm/>
         </div>
     )
