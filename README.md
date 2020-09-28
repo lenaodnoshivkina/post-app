@@ -1,3 +1,5 @@
+This application is a mini analogue of twitter. The user has the ability to add new notes to his personal page, mark favorites, and delete unnecessary ones. Also implemented the ability to search for all existing notes.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
